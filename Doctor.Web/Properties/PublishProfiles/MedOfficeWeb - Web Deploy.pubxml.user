@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Este archivo se usa en el proceso de publicación y empaquetado del proyecto web. Para personalizar el comportamiento de este proceso,
+edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 para obtener más información. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA7TG1BnvwUEOJ33VeBRn0bgAAAAACAAAAAAAQZgAAAAEAACAAAAACXl8eTAIC5Gnjrb28VBULWgqU+S6yoTord93fyXurUgAAAAAOgAAAAAIAACAAAAB3nhqVu/lcc9yz7x+QLIS43eBN+ixl2mpRrZEdx/0ZFoAAAAAvIhlnSzy/ABthw+baOZ8T+UgPoblajwEy16+mExzwGa8ywKLFbnWu9HFk237UtYXmFZG1QFYZwKv1r6WI6JcVbkMe6c3Vj/kG0VCGWZ4+qZdc8Qxh8XO455xD7u72mUUH5Gyj7icPfkOZU45df4TqsYf6Az66j0RSPPBcXaKSAEAAAACSP3L53TPBWkQxg5r2v9+ATc6dpMORPuGM1UFd14EOBKvsyrzRxVJmUW5xYOukms6i2J4Cyao+NK8641JZRVEm</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Server=tcp:dbdocsql.database.windows.net,1433%3bDatabase=MedOfficeDb%3bUser ID=R00t_5layer%3bPassword=Fvckyourself%401821%3bEncrypt=True%3bTrustServerCertificate=False%3bConnection Timeout=30%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

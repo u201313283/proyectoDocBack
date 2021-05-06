@@ -1,0 +1,11 @@
+C:\Users\brand\source\repos\Doctor\Doctor.Data\bin\Release\netstandard2.0\Doctor.Data.deps.json
+C:\Users\brand\source\repos\Doctor\Doctor.Data\bin\Release\netstandard2.0\Doctor.Data.dll
+C:\Users\brand\source\repos\Doctor\Doctor.Data\bin\Release\netstandard2.0\Doctor.Data.pdb
+C:\Users\brand\source\repos\Doctor\Doctor.Data\bin\Release\netstandard2.0\Doctor.Entities.dll
+C:\Users\brand\source\repos\Doctor\Doctor.Data\bin\Release\netstandard2.0\Doctor.Entities.pdb
+C:\Users\brand\source\repos\Doctor\Doctor.Data\obj\Release\netstandard2.0\Doctor.Data.csprojAssemblyReference.cache
+C:\Users\brand\source\repos\Doctor\Doctor.Data\obj\Release\netstandard2.0\Doctor.Data.AssemblyInfoInputs.cache
+C:\Users\brand\source\repos\Doctor\Doctor.Data\obj\Release\netstandard2.0\Doctor.Data.AssemblyInfo.cs
+C:\Users\brand\source\repos\Doctor\Doctor.Data\obj\Release\netstandard2.0\Doctor.Data.csproj.CopyComplete
+C:\Users\brand\source\repos\Doctor\Doctor.Data\obj\Release\netstandard2.0\Doctor.Data.dll
+C:\Users\brand\source\repos\Doctor\Doctor.Data\obj\Release\netstandard2.0\Doctor.Data.pdb

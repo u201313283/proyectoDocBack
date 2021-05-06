@@ -1,0 +1,8 @@
+C:\Users\brand\source\repos\Doctor\Doctor.Entities\bin\Release\netstandard2.0\Doctor.Entities.deps.json
+C:\Users\brand\source\repos\Doctor\Doctor.Entities\bin\Release\netstandard2.0\Doctor.Entities.dll
+C:\Users\brand\source\repos\Doctor\Doctor.Entities\bin\Release\netstandard2.0\Doctor.Entities.pdb
+C:\Users\brand\source\repos\Doctor\Doctor.Entities\obj\Release\netstandard2.0\Doctor.Entities.csprojAssemblyReference.cache
+C:\Users\brand\source\repos\Doctor\Doctor.Entities\obj\Release\netstandard2.0\Doctor.Entities.AssemblyInfoInputs.cache
+C:\Users\brand\source\repos\Doctor\Doctor.Entities\obj\Release\netstandard2.0\Doctor.Entities.AssemblyInfo.cs
+C:\Users\brand\source\repos\Doctor\Doctor.Entities\obj\Release\netstandard2.0\Doctor.Entities.dll
+C:\Users\brand\source\repos\Doctor\Doctor.Entities\obj\Release\netstandard2.0\Doctor.Entities.pdb

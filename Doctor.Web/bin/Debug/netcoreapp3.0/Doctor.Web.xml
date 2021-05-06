@@ -1,0 +1,424 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Doctor.Web</name>
+    </assembly>
+    <members>
+        <member name="T:Doctor.Web.Controllers.CitasController">
+            <summary>
+            CITAS CONTROLLER responsible for GET/POST/DELETE/PUT 
+            </summary>
+        </member>
+        <member name="M:Doctor.Web.Controllers.CitasController.List">
+            <summary>
+            THIS GET METHOD RETURNS CITAS LIST
+            </summary>
+            <returns>ARRAY OF CITAS</returns>
+        </member>
+        <member name="M:Doctor.Web.Controllers.CitasController.Show(System.Int32)">
+            <summary>
+            THIS GET METHOD RETURNS CITAS OBJECT BY CITAID
+            </summary>
+            <param name="CitaId"></param>
+            <returns>OBJECT OF CITAS</returns>
+        </member>
+        <member name="M:Doctor.Web.Controllers.CitasController.HistorialClinico(System.Int32,System.Int32)">
+            <summary>
+            THIS GET METHOD RETURNS CITAS OBJECT BY  PatientID and CitaId
+            </summary>
+            <param name="PacienteId"></param>
+            /// <param name="MedicoId"></param>   
+            <returns>CITAS OBJECT</returns>
+        </member>
+        <member name="M:Doctor.Web.Controllers.CitasController.DoctorCita(System.Int32)">
+            <summary>
+            THIS GET METHOD RETURNS CITAS OBJECT BY MEDICOID
+            </summary>
+            <param name="MedicoId"></param>
+            <returns>CITAS OBJECT</returns>
+        </member>
+        <member name="M:Doctor.Web.Controllers.CitasController.PacienteCita(System.Int32)">
+            <summary>
+            THIS GET METHOD RETURNS CITAS OBJECT BY PacienteId
+            </summary>
+            <param name="PacienteId"></param>
+            <returns>CITAS OBJECT</returns>
+        </member>
+        <member name="M:Doctor.Web.Controllers.CitasController.Notificar(System.String,System.String,System.String,System.String)">
+            <summary>
+            THIS GET METHOD SENDS MAIL TO PATIENT, NOTIFYING THE APPOINTMENT
+            </summary>
+            <param name="Medico"></param>
+            <param name="Correo"></param>
+            <param name="Fecha"></param>
+            <param name="Hora"></param>
+            <returns>200 ok</returns>
+        </member>
+        <member name="M:Doctor.Web.Controllers.CitasController.Update(Doctor.Web.Models.UpdateCitaViewModel)">
+            <summary>
+            THIS PUT METHOD MODIFY CITAS BY CITAID 
+            </summary>
+            <param name="model"></param>
+            <returns>200 OR 404</returns>
+        </member>
+        <member name="M:Doctor.Web.Controllers.CitasController.Create(Doctor.Web.Models.CreateCitaViewModel)">
+            <summary>
+            THIS POST METHOD CREATE CITA 
+            </summary>
+            <param name="model"></param>
+            <returns>200 OR 404</returns>
+        </member>
+        <member name="M:Doctor.Web.Controllers.CitasController.Delete(System.Int32)">
+            <summary>
+            THIS PUT METHOD MODIFY CITAS BY CITAID
+            </summary>
+            <param name="CitaId"></param>
+            <returns>200 OR 404</returns>
+        </member>
+        <member name="T:Doctor.Web.Controllers.CitasExamenesController">
+            <summary>
+            CITASEXAMENES CONTROLLER responsible for GET/POST/DELETE/PUT 
+            </summary>
+        </member>
+        <member name="M:Doctor.Web.Controllers.CitasExamenesController.List">
+            <summary>
+            THIS GET METHOD RETURNS CITASEXAMENES LIST
+            </summary>
+            <returns>ARRAY OF CITASEXAMENES</returns>
+        </member>
+        <member name="M:Doctor.Web.Controllers.CitasExamenesController.Show(System.Int32)">
+            <summary>
+            THIS GET METHOD RETURNS CITASEXAMENES OBJECT BY ID
+            </summary>
+            <param name="id"></param>
+            <returns>OBJECT OF CITASEXAMENES</returns>
+        </member>
+        <member name="M:Doctor.Web.Controllers.CitasExamenesController.ShowCitaExamen(System.String)">
+            <summary>
+            THIS GET METHOD RETURNS CITASEXAMENES OBJECT BY OBSERVACION
+            </summary>
+            <param name="Observacion"></param>
+            <returns>OBJECT OF CITASEXAMENES </returns>
+        </member>
+        <member name="M:Doctor.Web.Controllers.CitasExamenesController.Update(Doctor.Web.Models.UpdateCitaExamenViewModel)">
+            <summary>
+            THIS PUT METHOD MODIFY CITASEXAMENES BY CITAEXAMENID 
+            </summary>
+            <param name="model"></param>
+            <returns>200 OR 404</returns>
+        </member>
+        <member name="M:Doctor.Web.Controllers.CitasExamenesController.Create(Doctor.Web.Models.CreateCitaExamenViewModel)">
+            <summary>
+            THIS POST METHOD CREATE CITASEXAMENES 
+            </summary>
+            <param name="model"></param>
+            <returns>200 OR 404</returns>
+        </member>
+        <member name="M:Doctor.Web.Controllers.CitasExamenesController.Delete(System.Int32)">
+            <summary>
+            THIS DELETE METHOD DELETE CITASEXAMENES BY CITAEXAMENID
+            </summary>
+            <param name="CitaExamenId"></param>
+            <returns>200 OR 404</returns>
+        </member>
+        <member name="T:Doctor.Web.Controllers.DiagnosticosController">
+            <summary>
+            CITAS CONTROLLER responsible for GET/POST/DELETE/PUT 
+            </summary>
+        </member>
+        <member name="M:Doctor.Web.Controllers.DiagnosticosController.List">
+            <summary>
+            THIS GET METHOD RETURNS DIAGNOSTICOS LIST
+            </summary>
+            <returns>ARRAY OF DIAGNOSTICOS</returns>
+        </member>
+        <member name="M:Doctor.Web.Controllers.DiagnosticosController.Show(System.Int32)">
+            <summary>
+            THIS GET METHOD RETURNS DIAGNOSTICOS OBJECT BY DIAGNOSTICOID
+            </summary>
+            <param name="DiagnosticoId"></param>
+            <returns>OBJECT OF DIAGNOSTICOS</returns>
+        </member>
+        <member name="M:Doctor.Web.Controllers.DiagnosticosController.DiagnosticoCita(System.Int32)">
+            <summary>
+            THIS GET METHOD RETURNS Diagnosticos OBJECT BY CitaId
+            </summary>
+            <param name="CitaId"></param>
+            <returns>CITAS OBJECT</returns>
+        </member>
+        <member name="M:Doctor.Web.Controllers.DiagnosticosController.ShowDiagnostico(System.String)">
+            <summary>
+            THIS GET METHOD RETURNS DIAGNOSTICOS OBJECT BY OBSERVACÍON
+            </summary>
+            <param name="Observacion"></param>
+            <returns>OBJECT OF DIAGNOSTICOS</returns>
+        </member>
+        <member name="M:Doctor.Web.Controllers.DiagnosticosController.Update(Doctor.Web.Models.UpdateDiagnosticoViewModel)">
+            <summary>
+            THIS PUT METHOD MODIFY DIAGNOSTICOS BY DIAGNOSTICOID
+            </summary>
+            <param name="model"></param>
+            <returns>200 OR 404</returns>
+        </member>
+        <member name="M:Doctor.Web.Controllers.DiagnosticosController.Create(Doctor.Web.Models.CreateDiagnosticoViewModel)">
+            <summary>
+            THIS POST METHOD CREATE DIAGNOSTICOS 
+            </summary>
+            <param name="model"></param>
+            <returns>200 OR 404</returns>
+        </member>
+        <member name="M:Doctor.Web.Controllers.DiagnosticosController.Delete(System.Int32)">
+            <summary>
+            THIS DELETE METHOD DELETE DIAGNOSTICOS BY DIAGNOSTICOID
+            </summary>
+            <param name="DiagnosticoId"></param>
+            <returns>200 OR 404</returns>
+        </member>
+        <member name="T:Doctor.Web.Controllers.EnfermedadesController">
+            <summary>
+            ENFERMEDADES CONTROLLER responsible for GET/POST/DELETE/PUT 
+            </summary>
+        </member>
+        <member name="M:Doctor.Web.Controllers.EnfermedadesController.List">
+            <summary>
+            THIS GET METHOD RETURNS ENFERMEDADES LIST
+            </summary>
+            <returns>ARRAY OF ENFERMEDADES</returns>
+        </member>
+        <member name="M:Doctor.Web.Controllers.EnfermedadesController.Show(System.Int32)">
+            <summary>
+            THIS GET METHOD RETURNS ENFERMEDADES OBJECT BY ENFERMEDADID
+            </summary>
+            <param name="EnfermedadId"></param>
+            <returns>OBJECT OF ENFERMEDADES</returns>
+        </member>
+        <member name="M:Doctor.Web.Controllers.EnfermedadesController.ShowName(System.String)">
+            <summary>
+            THIS GET METHOD RETURNS ENFERMEDAD OBJECT BY NAME
+            </summary>
+            <param name="Nombre"></param>
+            <returns>ENFERMEDAD OBJECT</returns>
+        </member>
+        <member name="T:Doctor.Web.Controllers.ExamenesController">
+            <summary>
+            EXAMENES CONTROLLER responsible for GET/POST/DELETE/PUT 
+            </summary>
+        </member>
+        <member name="M:Doctor.Web.Controllers.ExamenesController.List">
+            <summary>
+            THIS GET METHOD RETURNS EXAMENES LIST
+            </summary>
+            <returns>ARRAY OF EXAMENES</returns>
+        </member>
+        <member name="M:Doctor.Web.Controllers.ExamenesController.Show(System.Int32)">
+            <summary>
+            THIS GET METHOD RETURNS EXAMENES OBJECT BY EXAMENID
+            </summary>
+            <param name="ExamenId"></param>
+            <returns>OBJECT OF EXAMENES</returns>
+        </member>
+        <member name="T:Doctor.Web.Controllers.MedicamentosController">
+            <summary>
+            MEDICAMENTOS CONTROLLER responsible for GET/POST/DELETE/PUT 
+            </summary>
+        </member>
+        <member name="M:Doctor.Web.Controllers.MedicamentosController.List">
+            <summary>
+            THIS GET METHOD RETURNS MEDICAMENTOS LIST
+            </summary>
+            <returns>ARRAY OF MEDICAMENTOS</returns>
+        </member>
+        <member name="M:Doctor.Web.Controllers.MedicamentosController.Show(System.Int32)">
+            <summary>
+            THIS GET METHOD RETURNS MEDICAMENTOS OBJECT BY MEDICAMENTOID
+            </summary>
+            <param name="MedicamentoId"></param>
+            <returns>OBJECT OF MEDICAMENTOS</returns>
+        </member>
+        <member name="M:Doctor.Web.Controllers.MedicamentosController.ShowName(System.String)">
+            <summary>
+            THIS GET METHOD RETURNS MEDICAMENTO OBJECT BY NAME
+            </summary>
+            <param name="Nombre"></param>
+            <returns>MEDICAMENTO OBJECT</returns>
+        </member>
+        <member name="T:Doctor.Web.Controllers.MedicosController">
+            <summary>
+            MEDICOS CONTROLLER responsible for GET/POST/DELETE/PUT 
+            </summary>
+        </member>
+        <member name="M:Doctor.Web.Controllers.MedicosController.List">
+            <summary>
+            THIS GET METHOD RETURNS MEDICOS LIST
+            </summary>
+            <returns>ARRAY OF MEDICOS</returns>
+        </member>
+        <member name="M:Doctor.Web.Controllers.MedicosController.Show(System.Int32)">
+            <summary>
+            THIS GET METHOD RETURNS MEDICOS OBJECT BY MEDICOID
+            </summary>
+            <param name="id"></param>
+            <returns>OBJECT OF MEDICOS</returns>
+        </member>
+        <member name="M:Doctor.Web.Controllers.MedicosController.Authenticate(Doctor.Web.Models.LoginMedicoViewModel)">
+            <summary>
+            THIS GET METHOD RETURNS MEDICOS OBJECT BY USUARIO AND PASSWORD IN BODY
+            </summary>
+            <param name="model"></param>
+            <returns>OBJECT OF MEDICOS</returns>
+        </member>
+        <member name="M:Doctor.Web.Controllers.MedicosController.Login(System.String,System.String)">
+            <summary>
+            THIS GET METHOD RETURNS MEDICOS OBJECT BY USUARIO AND PASSWORD
+            </summary>
+            <param name="Usuario"></param>
+            <param name="Password"></param>
+            <returns>OBJECT OF MEDICOS</returns>
+        </member>
+        <member name="M:Doctor.Web.Controllers.MedicosController.obtenerNombre(System.Int32)">
+            <summary>
+            THIS GET METHOD RETURNS MEDICOS OBJECT BY MEDICOID
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Doctor.Web.Controllers.MedicosController.ShowName(System.String)">
+            <summary>
+            THIS GET METHOD RETURNS MEDICOS OBJECT BY USUARIO
+            </summary>
+            <param name="Usuario"></param>
+            <returns>OBJECT OF MEDICOS</returns>
+        </member>
+        <member name="M:Doctor.Web.Controllers.MedicosController.Update(Doctor.Web.Models.UpdateMedicoViewModel)">
+            <summary>
+            THIS PUT METHOD MODIFY MEDICOS BY MEDICOID
+            </summary>
+            <param name="model"></param>
+            <returns>200 OR 404</returns>
+        </member>
+        <member name="M:Doctor.Web.Controllers.MedicosController.Create(Doctor.Web.Models.CreateMedicoViewModel)">
+            <summary>
+            THIS POST METHOD CREATE MEDICOS 
+            </summary>
+            <param name="model"></param>
+            <returns>200 OR 404</returns>
+        </member>
+        <member name="T:Doctor.Web.Controllers.PacientesController">
+            <summary>
+            PACIENTES CONTROLLER responsible for GET/POST/DELETE/PUT 
+            </summary>
+        </member>
+        <member name="M:Doctor.Web.Controllers.PacientesController.List">
+            <summary>
+            THIS GET METHOD RETURNS PACIENTE LIST
+            </summary>
+            <returns>ARRAY OF PACIENTES</returns>
+        </member>
+        <member name="M:Doctor.Web.Controllers.PacientesController.Show(System.Int32)">
+            <summary>
+            THIS GET METHOD RETURNS PACIENTE OBJECT BY  PACIENTEID
+            </summary>
+            <param name="id"></param>
+            <returns>PACIENTE OBJECT</returns>
+        </member>
+        <member name="M:Doctor.Web.Controllers.PacientesController.ShowName(System.String)">
+            <summary>
+            THIS GET METHOD RETURNS PACIENTE OBJECT BY NAME
+            </summary>
+            <param name="Nombre"></param>
+            <returns>PACIENTE OBJECT</returns>
+        </member>
+        <member name="M:Doctor.Web.Controllers.PacientesController.DoctorPaciente(System.Int32)">
+            <summary>
+            THIS GET METHOD RETURNS PACIENTE OBJECT BY MEDICOID
+            </summary>
+            <param name="MedicoId"></param>
+            <returns>PACIENTE OBJECT</returns>
+        </member>
+        <member name="M:Doctor.Web.Controllers.PacientesController.Update(Doctor.Web.Models.UpdatePacienteViewModel)">
+            <summary>
+            THIS PUT METHOD MODIFY PACIENTE 
+            </summary>
+            <param name="model"></param>
+            <returns>200 OR 404</returns>
+        </member>
+        <member name="M:Doctor.Web.Controllers.PacientesController.Create(Doctor.Web.Models.CreatePacienteViewModel)">
+            <summary>
+            THIS POST METHOD CREATE PACIENTE 
+            </summary>
+            <param name="model"></param>
+            <returns>200 OR 404</returns>
+        </member>
+        <member name="M:Doctor.Web.Controllers.PacientesController.Delete(System.Int32)">
+            <summary>
+            THIS DELETE METHOD DELETE PACIENTE OBJECT BY PACIENTEID
+            </summary>
+            <param name="id"></param>
+            <returns>200 OR 404</returns>
+        </member>
+        <member name="T:Doctor.Web.Controllers.RecetasController">
+            <summary>
+            RECETAS CONTROLLER responsible for GET/POST/DELETE/PUT 
+            </summary>
+        </member>
+        <member name="M:Doctor.Web.Controllers.RecetasController.List">
+            <summary>
+            THIS GET METHOD RETURNS RECETAS LIST
+            </summary>
+            <returns>ARRAY OF RECETAS</returns>
+        </member>
+        <member name="M:Doctor.Web.Controllers.RecetasController.Show(System.Int32)">
+            <summary>
+            THIS GET METHOD RETURNS RECETAS OBJECT BY RECETAID
+            </summary>
+            <param name="RecetaId"></param>
+            <returns>OBJECT OF RECETAS</returns>
+        </member>
+        <member name="M:Doctor.Web.Controllers.RecetasController.RecetaCita(System.Int32)">
+            <summary>
+            THIS GET METHOD RETURNS Recetas OBJECT BY CitaId
+            </summary>
+            <param name="CitaId"></param>
+            <returns>CITAS OBJECT</returns>
+        </member>
+        <member name="M:Doctor.Web.Controllers.RecetasController.Update(Doctor.Web.Models.UpdateRecetasViewModel)">
+            <summary>
+            THIS PUT METHOD MODIFY DIAGNOSTICOS BY RECETAID
+            </summary>
+            <param name="model"></param>
+            <returns>200 OR 404</returns>
+        </member>
+        <member name="M:Doctor.Web.Controllers.RecetasController.Create(Doctor.Web.Models.CreateRecetasViewModel)">
+            <summary>
+            THIS POST METHOD CREATE DIAGNOSTICOS 
+            </summary>
+            <param name="model"></param>
+            <returns>200 OR 404</returns>
+        </member>
+        <member name="M:Doctor.Web.Controllers.RecetasController.Delete(System.Int32)">
+            <summary>
+            THIS DELETE METHOD DELETE DIAGNOSTICOS BY RECETAID
+            </summary>
+            <param name="RecetaId"></param>
+            <returns>200 OR 404</returns>
+        </member>
+        <member name="T:Doctor.Web.Controllers.TipoDocumentosController">
+            <summary>
+            TIPODOCUMENTO CONTROLLER responsible for GET/POST/DELETE/PUT
+            </summary>
+        </member>
+        <member name="M:Doctor.Web.Controllers.TipoDocumentosController.List">
+            <summary>
+            THIS GET METHOD RETURNS TIPODOCUMENTO LIST
+            </summary>
+            <returns>ARRAY OF TIPODOCUMENTO</returns>
+        </member>
+        <member name="M:Doctor.Web.Controllers.TipoDocumentosController.Show(System.Int32)">
+            <summary>
+            THIS GET METHOD RETURNS TIPODOCUMENTO OBJECT BY TIPODOCUMENTOID
+            </summary>
+            <param name="TipoDocumentoId"></param>
+            <returns>OBJECT OF TIPODOCUMENTO</returns>
+        </member>
+    </members>
+</doc>
